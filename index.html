@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+        <section>
+            <h2 class="title">Get Link For your WhatsApp</h2>
+            <form accept="POST">
+                <input type="number" name="number" id="inp_number" placeholder="Enter your number">
+                <ul id="valid">
+                    <li>Enter valid phone number  !</li>
+                    <li>It's of 11 digits</li>
+                </ul>
+                <button id="btn_get_Link" >Get Link</button>
+            </form>
+            <div class="result">
+                <div>
+                    <input id="inp_result" type="text" readonly>
+                <span class="hand">👆</span>
+                </div>
+                <a  id="link" target="_blank">Go</a>
+            </div>
+                
+            
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

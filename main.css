@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(66, 65, 65);
+    min-height: 100vh;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    padding: 15px 20px;
+    outline: none;
+    border: 2px solid gray;
+    margin-block: .9rem;
+    background-color: transparent;
+    color: white;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+form input::placeholder {
+    color: rgb(201, 192, 192);
+}
+
+button ,a{
+    padding: 10px;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    border-radius: .6rem;
+    -webkit-border-radius: .6rem;
+    -moz-border-radius: .6rem;
+    -ms-border-radius: .6rem;
+    -o-border-radius: .6rem;
+    outline: none;
+    border: none;
+    background-color: rgb(16, 205, 238);
+    color: rgb(233, 220, 220);
+    transition: background-color .4s ease-in-out;
+    -webkit-transition: background-color .4s ease-in-out;
+    -moz-transition: background-color .4s ease-in-out;
+    -ms-transition: background-color .4s ease-in-out;
+    -o-transition: background-color .4s ease-in-out;
+
+
+}
+
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(32, 142, 161);
+}
+
+.result {
+    margin-top: 3rem;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.result div {
+    position: relative
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}
+#inp_result {
+    width: 100%;
+    padding: 13px;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(168, 164, 164);
+    outline: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.hand {
+    font-size: 1.4rem;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    width: 3rem;
+}
+
+.hand:hover {
+    cursor: pointer;
+}
+
+#valid {
+    list-style: none;
+    padding: 0 0 20px;
+    display: none;
+    flex-direction: column;
+}
+
+#valid li {
+    padding: 6px 0;
+    color: rgb(253, 109, 138);
+    font-size: 1rem;
+}
